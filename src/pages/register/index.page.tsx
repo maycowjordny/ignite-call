@@ -53,7 +53,6 @@ export default function Register() {
                 alert(err.response.data.message)
             }
 
-            console.error(err)
             return
         }
 
@@ -76,7 +75,6 @@ export default function Register() {
                     <TextInput size='sm'
                         prefix="ignite.com/"
                         placeholder="seu-usuário"
-                        crossOrigin='anonymous'
                         {...register('username')}>
                     </TextInput>
                     {errors.username && (
@@ -87,7 +85,6 @@ export default function Register() {
                     <Text size='sm'>Nome completo</Text>
                     <TextInput
                         placeholder="seu-usuário"
-                        crossOrigin='anonymous'
                         {...register('name')}
                     >
                     </TextInput>
